@@ -1,0 +1,209 @@
+/* General Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+/* Container for Sidebar + Content */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    padding: 57px;
+    width: 300px;
+    box-shadow: 1px 0 0px #757575;
+    margin: 30px;
+    margin-left: 255px;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+     font-size: 40px;
+     margin: 5px;
+
+}
+
+.sidebar h3 {
+    font-size: 30px;
+    color: #757575;
+    margin: 5px;
+}
+
+.sidebar h4 {
+    font-size: 18px;
+    color: #757575;
+}
+
+.social-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px; /* space between buttons */
+}
+
+.social-btn {
+    padding: 6px 10px; /* smaller padding */
+    font-size: 0.9em; /* smaller text */
+    background-color: #3a3a3a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #4a1a4a; /* Dark purple accent */
+    color: #fff;
+}
+
+.sidebar-nav {
+    margin-top: 30px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* vertical menu */
+    gap: 15px; /* spacing between links */
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #4a1a4a; /* Dark purple accent */
+    color: #fff;
+}
+
+/* Main Content Area */
+.main-container {
+    flex: 1;
+    padding: 40px;
+    padding: 40px;
+    margin-right: 165px;
+}
+
+/* Section Styling */
+.section {
+    background-color: #1e1e1e; /* Dark gray card background */
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #4a1a4a; /* Dark purple accent */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section li strong {
+    color: #7a4f7a; /* Lighter dark purple for readability */
+}
+
+/* Category Container */
+.skill-items {
+    display: flex;
+}
+
+/* Individual Skill Cards */
+.skill-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 10px;
+    
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(74, 26, 74, 0.3); /* Dark purple glow */
+}
+
+.skill-icon {
+ font-size: 45px;
+ padding-right: 10px;
+}
+
+/*Projects section styling*/
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Changed from center to flex-start */
+    gap: 20px; /* Add gap between image and content */
+    padding: 20px;
+
+}
+
+.project-content {
+    flex: 1; /* Take up remaining space */
+}
+
+.project-content h3{
+    margin-top: 0; /* Remove top margin to align with thumbnail */
+    color: #7a4f7a; /* Lighter dark purple for readability */
+}
+
+.thumbnail{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+}
