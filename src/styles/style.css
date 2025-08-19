@@ -21,12 +21,10 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
-
-    padding: 57px;
-    width: 300px;
+    padding: 32px 20px;
+    width: 260px;
     box-shadow: 1px 0 0px #757575;
-    margin: 30px;
-    margin-left: 255px;
+    margin: 20px 0 20px 20px;
     flex-shrink: 0; /* Prevent sidebar from shrinking */
 }
 
@@ -106,9 +104,8 @@ body {
 /* Main Content Area */
 .main-container {
     flex: 1;
-    padding: 40px;
-    padding: 40px;
-    margin-right: 165px;
+    padding: 32px 20px;
+    margin-right: 0;
 }
 
 /* Section Styling */
